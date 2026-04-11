@@ -7,29 +7,47 @@ class Mobile
   int price;
   static String name;
 
-  public void show()
+  static
   {
-    System.out.println(brand+" : "+price+" : "+ name);
+    name = "phone";
+  }
+
+  // public void show()
+  // {
+  //   System.out.println(brand+" : "+price+" : "+ name);
+  // }
+
+  public Mobile()
+  {
+    brand = "";
+    price = 200;
   }
 }
 public class Static_key
 {
-  public static void main(String[] args)
+  /**
+   * @param args
+   */
+  public static void main(String[] args) throws ClassNotFoundException
   {
-    Mobile obj1 = new Mobile();
-    obj1.brand = "Apple";
-    obj1.price = 1000;
-    Mobile.name = "SmartPhone";
 
-    Mobile obj2 = new Mobile();
-    obj2.brand = "Samsung";
-    obj2.price = 1700;
-    Mobile.name = "SmartPhone";
+     Class.forName("Mobile");
+    // Mobile obj1 = new Mobile();
+    // obj1.brand = "Apple";
+    // obj1.price = 1000;
+    // Mobile.name = "SmartPhone";
 
-    Mobile.name = "Phone";
+    // Mobile obj2 = new Mobile();
+    // obj2.brand = "Samsung";
+    // obj2.price = 1700;
+    // Mobile.name = "SmartPhone";
+
+    // Mobile.name = "Phone";
     
+    // obj1.show();
+    // obj2.show();
+  }
 
-    obj1.show();
-    obj2.show();
+  public Static_key() {
   }
 }
