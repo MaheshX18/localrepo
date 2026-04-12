@@ -1,4 +1,4 @@
-package OOPS;
+package Calci;
 
 public class AdvCalc extends Calc{
   public int multi(int a,int b)

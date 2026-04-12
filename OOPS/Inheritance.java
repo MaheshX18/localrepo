@@ -1,5 +1,7 @@
 package OOPS;
 
+import Calci.AdvCalc;
+
 public class Inheritance 
 {
   public static void main(String[] args) {
